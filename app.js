@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/bacheca', (req, res) => {
-    res.json(posts)
+    res.json({posts: posts, count: posts.length})
 })
 
 app.listen(port, () => {
